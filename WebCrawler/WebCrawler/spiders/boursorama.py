@@ -6,7 +6,7 @@ from datetime import datetime
 class BoursoramaSpider(scrapy.Spider):
     name = 'boursorama'
     allowed_domains = ['www.boursorama.com']
-    start_urls = [f'https://www.boursorama.com/bourse/actions/palmares/france/?page={i}?france_filter%5Bmarket%5D=1rPCAC' for i in range(1,3)]
+    start_urls = [f'https://www.boursorama.com/bourse/actions/palmares/france/page-{i}?france_filter%5Bmarket%5D=1rPCAC' for i in range(1,3)]
 
     Database.connectDb()
     Database.createTable()
