@@ -21,3 +21,12 @@ class ReviewsAllocineItem(scrapy.Item):
     score = scrapy.Field()
     desc = scrapy.Field()
     release = scrapy.Field()
+
+class BoursoramaItem(scrapy.Item):
+    indexStockExchange = scrapy.Field()
+    stockAction = scrapy.Field()
+    variation = scrapy.Field()
+    vMax = scrapy.Field()
+    vMin = scrapy.Field()
+    vOpen = scrapy.Field()
+    dateCollect = scrapy.Field()
